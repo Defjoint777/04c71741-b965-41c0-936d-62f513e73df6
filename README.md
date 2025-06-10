@@ -165,13 +165,23 @@ Pay attention to how PlantUML translates your text definitions into SVG shapes a
 ## Questions
 
 1. In your own words, explain the advantage of describing diagrams in PlantUML's text format instead of drawing them manually.
-2. What is the benefit of generating SVG output compared to raster formats like PNG?
-3. Describe the structure of a simple PlantUML script. What key markers define the start and end of a diagram?
-4. Open one of your generated SVG files in `vim` or `less`. What XML elements do you observe? Which parts seem to correspond to your original PlantUML definitions?
-5. Use Inkscape or `svgviewer.dev` to open one of your SVG files. Can you identify individual diagram elements like arrows, text, or boxes? How would you modify an element manually if needed?
-6. When would you prefer to use local PlantUML rendering versus a service like Kroki.io?
-7. What potential security considerations might arise when uploading sensitive diagrams to online rendering services?
+   If we using PlantUML diagram text format as output we get standartized diagram, which is simple to read.
+  
+3. What is the benefit of generating SVG output compared to raster formats like PNG?
+   The benefit of generating SVG output is that svg file is easy to change, it makes devolopment faster and reproducible.
+5. Describe the structure of a simple PlantUML script. What key markers define the start and end of a diagram?
+   start and end are difined with "@". The structure of a diagramm starts with defining start of diagram, after we start to define a class "if we building class-diagram" and describe the class with properties and methods.
+   
+7. Open one of your generated SVG files in `vim` or `less`. What XML elements do you observe? Which parts seem to correspond to your original PlantUML definitions?
+   In XML contentpart of the SVG file i cant observe Definitions of all visual elements of the diagram. Like boxes, colors, lines etc.
+   
+9. Use Inkscape or `svgviewer.dev` to open one of your SVG files. Can you identify individual diagram elements like arrows, text, or boxes? How would you modify an element
+manually if needed? using vim we can change content of our svg and puml files. Using svgviewer we can find definitions of text arrows and all boxes.
 
+11. When would you prefer to use local PlantUML rendering versus a service like Kroki.io?
+    I would prefer local PlantUML rendering in working with sensible or secret data of company iam working for.
+13. What potential security considerations might arise when uploading sensitive diagrams to online rendering services?
+   Considiration arise of using online rendering platforms are that our Pumltext or SVG data might be saved on Server of the platform.
 ---
 
 ## Advice
